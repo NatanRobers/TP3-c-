@@ -1,0 +1,14 @@
+﻿@page
+@model TP3.Pages.CreatePropertyModel
+
+<h2>Nova Propriedade</h2>
+
+<form method="post">
+    <label>Nome: <input asp-for="Property.Name" /></label><br />
+    <label>Preço por noite: <input asp-for="Property.PricePerNight" type="number" step="0.01" /></label><br />
+    <label>
+        Cidade:
+        <select asp-for="Property.CityId" asp-items="Model.Cities"></select>
+    </label><br />
+    <button type="submit">Salvar</button>
+</form>

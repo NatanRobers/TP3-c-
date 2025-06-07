@@ -1,0 +1,23 @@
+﻿@page
+@model TP3.Pages.FilterPropertiesModel
+
+<h2>Filtrar Propriedades</h2>
+
+<form method="get">
+    <label>Preço mínimo: <input asp-for="MinPrice" /></label>
+    <label>Preço máximo: <input asp-for="MaxPrice" /></label>
+    <label>Nome da cidade: <input asp-for="CityName" /></label>
+    <label>Nome da propriedade: <input asp-for="PropertyName" /></label>
+    <button type="submit">Buscar</button>
+</form>
+
+@if (Model.Results != null)
+{
+    <h3>Resultados:</h3>
+    <ul>
+        @foreach (var p in Model.Results)
+        {
+            <li>@p.Name - R$ @p.PricePerNight - Cidade: @p.City.Name</li>
+        }
+    </ul>
+}

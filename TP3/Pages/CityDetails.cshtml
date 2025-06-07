@@ -1,0 +1,12 @@
+﻿@page "{name}"
+@model TP3.Pages.CityDetailsModel
+
+<h1>Detalhes de @Model.City.Name</h1>
+<h3>País: @Model.City.Country.CountryName</h3>
+
+<ul>
+    @foreach (var prop in Model.City.Properties)
+    {
+        <li><strong>@prop.Name</strong> - R$ @prop.PricePerNight</li>
+    }
+</ul>

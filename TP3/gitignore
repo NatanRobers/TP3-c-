@@ -1,0 +1,37 @@
+# Diretórios de build
+bin/
+obj/
+out/
+
+# Pastas de configuração de IDEs
+.vs/
+.idea/
+*.user
+*.suo
+
+# Arquivos de configuração temporária e cache
+*.cache
+*.log
+*.tmp
+*.db
+*.db-shm
+*.db-wal
+
+# DLLs, executáveis, e arquivos gerados
+*.dll
+*.exe
+*.pdb
+
+# Arquivos de publish e restore
+*.Publish.xml
+*.deps.json
+*.runtimeconfig.json
+
+# Arquivos gerados pelo build
+TP3/bin/
+TP3/obj/
+
+# Banco de dados local (SQLite, etc.)
+*.db
+*.db-shm
+*.db-wal
